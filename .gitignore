@@ -1,3 +1,6 @@
+# Prevent input files from being tracked (see AoC's About page)
+*.txt 
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
