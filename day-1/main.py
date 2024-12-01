@@ -1,13 +1,14 @@
 from collections import Counter
 
-f = open("input.txt", "r").readlines()
+with open("input.txt", "r") as f:
+    lines = f.readlines()
 
-def partOne(f):
+def partOne(lines):
     distance = 0
     left = []
     right = []
 
-    for line in f:
+    for line in lines:
         left.append(int(line[0:5]))
         right.append(int(line[8:]))
 
@@ -19,12 +20,12 @@ def partOne(f):
 
     print(distance)
 
-def partTwo(f):
+def partTwo(lines):
     similarity = 0
     left = []
     right = []
 
-    for line in f:
+    for line in lines:
         left.append(int(line[0:5]))
         right.append(int(line[8:]))
 
