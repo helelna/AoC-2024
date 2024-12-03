@@ -10,8 +10,8 @@ def partOne(lines):
     pattern = re.compile(r"mul\((\d+),(\d+)\)")
     numbers = pattern.findall(lines)
 
-    for pair in numbers:
-        result += int(pair[0]) * int(pair[1])
+    for x, y in numbers:
+        result += int(x) * int(y)
 
     print(result)
 
@@ -24,8 +24,8 @@ def partTwo(lines):
     mulPattern = re.compile(r"mul\((\d+),(\d+)\)")
     numbers = mulPattern.findall(lines)
 
-    for pair in numbers:
-        result += int(pair[0]) * int(pair[1])
+    for x, y in numbers:
+        result += int(x) * int(y)
 
     print(result)
 
