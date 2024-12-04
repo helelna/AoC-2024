@@ -178,3 +178,7 @@ cython_debug/
 pyvenv.cfg
 .venv
 pip-selfcheck.json
+
+###### Misc stuff
+etc
+share
